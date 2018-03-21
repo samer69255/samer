@@ -41,23 +41,29 @@ function get(url,callback) {
   },callback);
 }
 
-login('alex_2.6@hotmail.com','SamersameR88',
-function (c) {
-  if (c === null)
-  {
-      console.log('login not success');
-  }
 
-  else {
+start();
+function start() {
+
+  login('alex_2.6@hotmail.com','SamersameR88',
+  function (c) {
+    if (c === null)
+    {
+        console.log('login not success');
+        setTimeout(start,5000);
+    }
+
+    else {
 
 
-    dellAllMess();
+      dellAllMess();
 
 
-  }
+    }
 
 
-});
+  });
+}
 
 function init() {
   list = [];
