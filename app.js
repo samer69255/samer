@@ -45,7 +45,7 @@ function get(url,callback) {
 start();
 function start() {
 
-  login('alex_2.6@hotmail.com','SamersameR88',
+  login('alex_2.6@hotmail.com','SamersameR8',
   function (c) {
     if (c === null)
     {
