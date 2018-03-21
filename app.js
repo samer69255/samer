@@ -14,7 +14,7 @@ app.get('/index.htm', function (req, res) {
 });
 
 
-var server = app.listen(process.env.PORT || 3000, function () {
+var server = app.listen(process.env.PORT || '3000', function () {
    var host = server.address().address
    var port = server.address().port
 
@@ -41,11 +41,11 @@ function get(url,callback) {
   },callback);
 }
 
-login('alex_2.6@hotmail.com','SamersameR8',
+login('alex_2.6@hotmail.com','SamersameR88',
 function (c) {
   if (c === null)
   {
-      conosle.log('login not success');
+      console.log('login not success');
   }
 
   else {
